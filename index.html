@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/lib/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/crop.css">
+
+		<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+		<script src="/lib/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="/js/crop.js" type="text/javascript"></script>
+	</head>
+	
+	<body>
+		<div class="header">
+			<div>cloths fashion </div>
+			<div>cloths fashion</div>
+		</div>
+		<div class="container crop">
+			<form method="POST" enctype="multipart/form-data" id="fileUploadForm">
+				<div class="row upload-row">
+					<div class="col-md-5">
+						<div class="upload-btn">
+							<button class="btn">
+								<div id="uploadText">Upload image</div>
+								<img class="uploadPreview" name="uploadPreview"/>
+							</button>
+							
+							<input type="file" name="upload"  onchange="cropObj.readURL(this);"/>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<button type="button" class="btn btn-light" id="btnSubmit">Recommend</button>
+					</div>
+				</div>
+				<div class="row rec_text">
+					<div class="col-md-12">
+						<span>Recommendation: Your selected cloths</span>
+					</div>
+				</div>
+				<div class="row result-row">
+					<div class="col-md-3">
+						<img class="uploadPreview" name="uploadPreview" id="fileUrl"/>
+					</div>
+					<div class="col-md-9">
+						<div id='result' align='center' width="20%" height="20%"></div>
+					</div>
+				</div>
+				
+				<div class="form_data" id="form_data_id"></div>
+				
+				<div class="form_data">
+					<div class="diseased hide" id = "diseaseId">
+						<div class="formHeader">test</div>
+						<div class="row formValue">
+							<div class="col-md-3"><img class="uploadPreview" name="uploadPreview" /></div>
+							<div class="col-md-9">
+								<div class="value_header">test</div>
+								<div class="value_text">test</div>
+							</div>
+						</div>
+						<div class="row formValue">
+							<div class="col-md-3"><img class="uploadPreview" name="uploadPreview" /></div>
+							<div class="col-md-9">
+								<div class="value_header">test</div>
+								<div class="value_text">test</div>
+							</div>
+						</div>
+					</div>
+					<div class="healthy hide" id="healthyId">
+						<div class="formHeader">test</div>
+						<div class="row formValue">
+							<div class="col-md-3"><img class="uploadPreview" name="uploadPreview" /></div>
+							<div class="col-md-9">
+								<div class="value_header">test</div>
+								<div class="value_text"> test</div>
+							</div>
+						</div>
+						<div class="row formValue">
+							<div class="col-md-3"><img class="uploadPreview" name="uploadPreview" /></div>
+							<div class="col-md-9">
+								<div class="value_header">test</div>
+								<div class="value_text">test</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				
+			</form>
+		</div>
+		
+		
+	</body>
+</html>

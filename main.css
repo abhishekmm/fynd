@@ -1,0 +1,71 @@
+body{
+    overflow-x: hidden;
+}
+.header{
+    background: #3f3b3b;
+    min-height: 60px;
+}
+
+.imageSelect .image{
+    background: #ececec;
+    min-height: 350px;
+    margin: 50px 100px 0px 100px;
+    text-align: center;
+    padding-top:100px;
+}
+
+.imageSelect .image .upload-btn{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    top:90px;
+}
+
+.imageSelect .image div:nth-child(1){
+    font-size: 28px;
+}
+
+.imageSelect .image .upload-btn .btn{
+    border: 2px dotted #d2d2d2;
+    height: 140px;
+    border-radius: 100px;
+    background-color: white;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 140px;
+    overflow: hidden;
+    
+}
+
+.imageSelect .image .upload-btn .btn img{
+    position: relative;
+    height: 140px !important;
+    right: 21px;
+    bottom: 10px;
+}
+
+.imageSelect .image .upload-btn .btn span{
+    font-size: 15px;
+}
+
+.imageSelect .image .upload-btn input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.recommendation{
+    margin-top:70px;
+    text-align: center;
+}
+.recommendation button{
+    border-radius: 20px;
+    background: #ececec;
+}
+
+.recommendation .text{
+    padding-top:10px;
+}
